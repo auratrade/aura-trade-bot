@@ -4,7 +4,7 @@ import telebot
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # 1. قراءة التوكن والـ ID من متغيرات البيئة (أو وضعهم مباشرة)
-TOKEN = os.environ.get("TOKEN", "8813617570:AAE53Jh5NdKfvlcmR1OkFTokzBLgJKsogx0")
+TOKEN = os.environ.get("TOKEN", "8813617570:AAG1pbtFp4WrPU2ltnUA8r7jvSDg784xAvo")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "5978710701"))
 
 bot = telebot.TeleBot(TOKEN)
@@ -123,8 +123,8 @@ def handle_query(call):
   elif call.data == "contact_admin":
     user_states[chat_id] = "waiting_for_admin_msg"
     response_text = (
-        "✍️ **تفضل بكتابة رسالتك أو استفسارك الآن:**\n\n"
-        "سيتم تحويل رسالتك مباشرة للإدارة وسنرد عليك بداخل البوت.\n\n"
+        "✍️ **شكرا لك للتواصل مع منصة Aura-Trade**\n\n"
+        "سيتم تحويل رسالتك مباشرة للإدارة وسنرد عليك ب أسرع وقت ممكن .\n\n"
         "*(للإلغاء والعودة اضغط على زر القائمة الرئيسية أدناه)*"
     )
     bot.edit_message_text(
